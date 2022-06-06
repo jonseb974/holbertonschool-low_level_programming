@@ -1,2 +1,2 @@
-#!/bin/bash
-$CFILE = 0-preprocessor
+#!/bin/bah
+gcc -E $CFILE.c -o c
