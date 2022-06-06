@@ -1,2 +1,2 @@
 #!/bin/bash
-cc -c $FILE.o 
+cc -c $CFILE.o 
