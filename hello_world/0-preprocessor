@@ -1,0 +1,3 @@
+#!/bin/bash
+# first c file
+$CFILE = 0-preprocessor
