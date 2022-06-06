@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main Print a sentence
- * and a newline
+ *Description: main Print a sentence
+ * and a newline retrun0 if no trouble
  */
 int main(void)
 {
