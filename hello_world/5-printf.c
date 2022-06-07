@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- *Description: main Print a sentence
- * and a newline retrun0 if no trouble
+ * main -Entry point
+ *
+ * Return: Always 0(Success)
  */
 int main(void)
 {
