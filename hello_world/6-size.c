@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * Description : main print
- * the size
- * return0 if no trouble
+ * main - Entry point
+ * 
+ * Return; Always 0 (Success)
  */
 
 int main(void)
