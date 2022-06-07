@@ -1,7 +1,6 @@
 #include <stdio.h>
-/**
- *Description :main_void
- * @puts:print_a_string. 
+/*Description :main
+ *@puts:print_string. 
  */
 int main(void)
 {
