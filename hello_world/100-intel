@@ -5,3 +5,5 @@
 *
 * Return: Always 0 (success)
 */
+
+gcc -S -masm=intel $CFILE.c $CFILE.s
