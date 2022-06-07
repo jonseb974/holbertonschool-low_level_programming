@@ -1,8 +1,9 @@
 #include <stdio.h>
 /**
- * description main :print
- *  a
- *  string
+ *Description -  main  Type int, void
+ *  
+ * @puts: print a string. 
+ *  
  */
 int main(void)
 {
