@@ -3,8 +3,9 @@
 #include <time.h>                                                                                                                                        
 /**                                                                                                                
  * main -program that prints the alphabet in lowercase                                               
- * and uppercase with new lines
- * Return: 0                                                                                                        */ 
+* and uppercase with new lines
+*Return:0
+*/
 
 int main()
 {
