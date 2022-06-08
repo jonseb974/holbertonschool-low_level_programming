@@ -10,8 +10,8 @@ int main(void)
 
  {
 char ch;
-char maj;
-char minus;
+int maj;
+int minus;
 
 while (ch = 65 || ch <= 90)
 {
