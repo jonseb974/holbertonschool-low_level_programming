@@ -16,11 +16,11 @@ char minus;
 while (ch = 65 || ch <= 90)
 {
 	putchar(minus);
-	ch ++
+	ch ++;
 } while (ch = 97 || ch <= 122)
 {
 	putchar(maj);
-	ch ++
+	ch ++;
 } 
 	putchar('\n');
 return (0);
