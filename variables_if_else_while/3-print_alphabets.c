@@ -11,11 +11,11 @@ int main(void)
  {
 char ch;
 
-while (ch >= 65 || ch <= 90)
+while (ch >= 'a' || ch <= 'z')
 {
 	putchar(ch);
 	ch ++;
-} while (ch >= 97 || ch <= 122)
+} while (ch >= 'A' || ch <= 'Z')
 {
 	putchar(ch);
 	ch++;
