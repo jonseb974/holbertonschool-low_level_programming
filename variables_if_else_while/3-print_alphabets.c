@@ -12,14 +12,14 @@ int main(void)
 	 char minus = 65;
 	 char maj = 97;
 	 
-	 while (minus <= 90)
+	 while (maj <= 122)
 	 {
-		 putchar(minus);
-		 minus++;
-	 } while (maj <= 122)
-	 {
-	 	 putchar(maj);
+		 putchar(maj);
 		 maj++;
+	 } while (minus <= 90)
+	 {
+	 	 putchar(minus);
+		 minus++;
 	 } 
 	 putchar('\n');
 	 return (0);
