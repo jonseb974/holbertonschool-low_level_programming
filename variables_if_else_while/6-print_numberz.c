@@ -11,10 +11,15 @@ int main(void)
 {
 	int i = 48;
 	while (i <= 57)
+	{
 		putchar(i);
+		i++;
+	}
+		
 	{
 		printf("\n");
+		return (0);
 	
 	}
-	return (0);
+
 }
