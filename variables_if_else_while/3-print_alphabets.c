@@ -16,7 +16,7 @@ int main(void)
 	 {
 		 putchar(minus);
 		 minus++;
-	 } while (ch <= 122)
+	 } while (maj <= 122)
 	 {
 	 	 putchar(maj);
 		 maj++;
