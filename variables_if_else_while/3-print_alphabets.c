@@ -9,17 +9,18 @@
 int main(void)                                                                                                   
 
  {
-char ch;
-
-while (ch >= 'a' || ch <= 'z')
-{
-	putchar(ch);
-	ch ++;
-} while (ch >= 'A' || ch <= 'Z')
-{
-	putchar(ch);
-	ch++;
-} 
-	putchar('\n');
-return (0);
+	 char minus = 65;
+	 char maj = 97;
+	 
+	 while (minus <= 90)
+	 {
+		 putchar(minus);
+		 minus++;
+	 } while (ch <= 122)
+	 {
+	 	 putchar(maj);
+		 maj++;
+	 } 
+	 putchar('\n');
+	 return (0);
 }   
