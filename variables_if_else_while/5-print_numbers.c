@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-*main - print numbers from 0 to 10
+* main - print numbers
 *
-*Return:0
+* Return:0
 */
 int maim(void)
 {
