@@ -11,6 +11,18 @@
  */
 
 int _putchar(char c)
+	
 {
-	return (write(1, &c, 1));
+	char str[8]= "_puchar";
+	int i;
+
+	for(i=0; str[i]!= 0; i++)
+	{
+		_putchar(str[i]);
+	
+	
+	}
+	_puchar('\n');
+	return (0);
+
 }
