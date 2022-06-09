@@ -1,5 +1,7 @@
+#ifndef HEADER_FILE
+#define HEADER_FILE
 #include "main.h"
 
-int main() {
-	retun (0);
-}
+int _putchar()
+
+#endif
