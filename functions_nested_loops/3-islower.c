@@ -1,8 +1,10 @@
 #include<stdio.h>
 #include <ctype.h>
 /**
-*_islower(int) - return 1 or 0.
+*function_islower-return 1 or 0.
+*@c is an ascii integer
 *
+* Return 1 or 0
 */
 
 int _islower(int c)
