@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-* main - print a charactere
-* @print the alphabet
+* print_alphabet - print a charactere lowercase
+* 
 * Return: On success 1.
 * On error, -1 is returned, and errno is set appropriately.
 */
