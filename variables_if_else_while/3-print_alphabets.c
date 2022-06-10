@@ -10,6 +10,7 @@ int main(void)
 {
 	char minus = 65;
 	char maj = 97;
+
 	while (maj <= 122)
 
 	{
