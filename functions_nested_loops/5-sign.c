@@ -1,10 +1,11 @@
 #include <stdio.h>
+#include "main.h"
 /**
 * print_sign - print sign of a number.
 * @n: is an interger.
-* Return: 1 & + or 0 or -1 & - 
+* Return:1,+,0,-1.  
 */
-int print_sign(int n) 
+int print_sign(int n)
 {
 	if (n > 0)
 	{
@@ -19,6 +20,6 @@ int print_sign(int n)
 	else
 	{
 		putchar (48);
-		return (0);	
+		return (0);
 	}
 }
