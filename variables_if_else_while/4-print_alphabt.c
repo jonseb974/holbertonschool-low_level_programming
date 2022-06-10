@@ -1,15 +1,15 @@
 #include <stdio.h>
-#include <stdlib.h>                                                                                               
-#include <time.h>                                                                                                                                        
-/**                                                                                                                
- * main -program that prints the alphabet in lowercase                                               
+#include <stdlib.h>
+#include <time.h>
+/**
+* main -program that prints the alphabet in lowercase
 * and uppercase with new lines
-*Return:0
+* Return:0
 */
-
-int main()
+int main(void)
 {
 	char ch = 97;
+	
 	while (ch <= 122)
 	{
 		putchar(ch);
