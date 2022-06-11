@@ -1,24 +1,16 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "main.h"
+
 /**
-* main -assign random number to variable
-* if the number is greater than 0: is positive
-* if the number is 0: is zero
-* f the number is less than 0: is negative
-* Return: 0 (Success)
+* main - tests function that prints if integer is positive or negative
+*@i : an interger.
+* Return: 0
 */
+
 int main(void)
 {
-	int n;
-	srand(time(0));
-
-	n = rand() - RAND_MAX / 2;
-	if (n > 0)
-		printf("%d is positive\n", n);
-	else if (n < 0)
-		printf("%d is negative\n", n);
-	else
-		printf("%d is zero\n", n);
+	int i;
+	
+	i = 0;
+	positive_or_negative(i);
 	return (0);
 }
