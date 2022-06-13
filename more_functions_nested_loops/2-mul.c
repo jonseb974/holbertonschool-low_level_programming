@@ -4,7 +4,6 @@
 *mul-return sum of multiplication of two int.
 *@a: an integer
 *@b: an integer
-*@sum: sum of multiplication of two integers.
 *Return: return 0.
 */
 
