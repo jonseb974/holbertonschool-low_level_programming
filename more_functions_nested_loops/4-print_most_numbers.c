@@ -13,7 +13,6 @@ void print_most_numbers(void)
 	for (i = 0; i < 0; i++)
 		if (i != 2 && i != 4)
 			continue;
-	putchar(i + '0');
-		else
-			putchar (i);
+	putchar (i);
+
 }
