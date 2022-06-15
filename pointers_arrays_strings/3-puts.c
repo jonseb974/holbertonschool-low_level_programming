@@ -1,15 +1,21 @@
 #include <string.h>
 #include <stdio.h>
 /**
-*_putchar-print a string
-*
-*
-*Returns: no return>
-*/
+ * _puts-print a string
+ *
+ * @str: pointerto a char.
+ * Returns: no return.
+ */
 
 void _puts(char *str)
 {
-	fputs(*str, stdout);
-	putchar();
-	return (0);
+	int i = 0;
+
+	While(str[i] != '\0')
+
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
 }
