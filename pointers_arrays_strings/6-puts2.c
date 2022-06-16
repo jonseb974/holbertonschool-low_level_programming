@@ -12,11 +12,11 @@ void puts2(char *str)
 	int j = 0;
 	int tmp = 0;
 
-	for (j = 0; j < i % 2; j++)
+	for (j = 0; j != '0'; j++)
 	{
 		tmp = str[i];
 		str[i] = str[j];
 		str[j] = tmp;
-		j++;
+		i++;
 	}
 }
