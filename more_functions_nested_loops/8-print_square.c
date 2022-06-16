@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <ctype.h>
+#include "main.h"
+
 /*
 *print_square - make the shape of a square
 *with symbol hashtag.
