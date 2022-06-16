@@ -1,28 +1,33 @@
-#include <stdio.h>
-#include <ctype.h>
+#include "main.h"
+
 /**
-*print_triangle - print shape of a triangle
-*with hashtag signs.
-*@size: integer.
-*Retrun: no return.
-*/
+ * print_triangle - print shape of a triangle
+ * with hashtag signs.
+ * @size: integer.
+ * Retrun: no return.
+ */
+
 void print_triangle(int size)
 {
-	int c;
 	int r;
 	int e;
+	int c;
 
-	if(size > 0)
+	if (size > 0)
 	{
 		for (r = 0; r < size; r++)
 		{
-			for (e = 0; e <= size; e++)
+			for (e = 0; e < size; e++)
 			{
-				putchar(35);
+				c = (size - r) - 1;
+				if (e < c)
+					_putchar(' ');
+				else
+					_putchar(35);
 			}
-			putchar('\n');
+			_putchar('\n');
 		}
 	}
 	else
-		putchar('\n');
+		_putchar('\n');
 }
