@@ -1,3 +1,3 @@
 #!/bin/bash
-#a readme file
-This is a readme file link to this repository about pointers, arrays, strings. 
+#readme file
+This is a redme, file link to this repository.
