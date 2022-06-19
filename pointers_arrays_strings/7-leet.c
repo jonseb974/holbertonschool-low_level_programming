@@ -8,10 +8,10 @@ char *leet(char *s)
 {
 	int i = 0;
 	int j = 0;
-	char start = "aAeEoOlLtT";
+	char *start = "aAeEoOlLtT";
 	char *end = "4433001177";
 
-	while (*(s + l) != '\0')
+	while (*(s + i) != '\0')
 	{
 		while (*(start + j) != '\0')
 		{
