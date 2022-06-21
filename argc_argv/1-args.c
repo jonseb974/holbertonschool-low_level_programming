@@ -2,6 +2,8 @@
 #include "main.h"
 /**
  * main - print number of arguments.
+ * @arg: integer
+ * @argv: array of char
  *Return: no return.
  */
 
