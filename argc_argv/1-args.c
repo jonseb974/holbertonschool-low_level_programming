@@ -4,15 +4,20 @@
  * main - print number of arguments.
  * @argc: integer
  * @argv: array of char
- *Return: no return.
+ * Return: no return.
  */
 
 int main(int argc, char *argv[])
 {
 	int i;
 
-	for (i = 1; i < argc; i++)
+	if (argc > 0)
 	{
-		printf("%d %s\n", i, argv[i]);
+		while (i < argc)
+		{
+			printf("%s\n", argv[i]);
+			i++;
+		}
+		return (0);
 	}
 }
