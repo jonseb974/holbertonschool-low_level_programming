@@ -15,14 +15,14 @@ int digit_orNot(char *a)
 	int i, sum, len;
 
 	i = 0;
-	
+
 	sum = 0;
 
 	len = strlen(a);
 
 	while (i < len)
 	{
-		if (a[i] < '0'|| a[i] > '9')
+		if (a[i] < '0' || a[i] > '9')
 		{
 			return (-1);
 		}
