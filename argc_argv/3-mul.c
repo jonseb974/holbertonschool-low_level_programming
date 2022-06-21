@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 			}
 			mul = (i * j);
 			cont++;
-		} printf("%d %d %d", i, j, mul);
+		} printf("%d\n", mul);
 	}
 	return (0);
 }
