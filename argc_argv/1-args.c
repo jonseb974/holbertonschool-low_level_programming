@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * main - print number of arguments.
- * @arg: integer
+ * @argc: integer
  * @argv: array of char
  *Return: no return.
  */
