@@ -7,17 +7,14 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	unsigned int i ;
-	
+	void *i;
+
 	i = 0;
 
 	i = malloc(b);
 
 	if (i == NULL)
-	{
 		return (98);
-		else
-			return (i);
-	}
-
+	else
+		return (i);
 }
