@@ -10,33 +10,40 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *ptr;
-
-	char *one  = 0;
-
-	char *two = 0;
-
-	unsigned int i;
-
-	unsigned int j;
+	void *arr;
 
 	i = j = 0;
 
 	if (size != 0)
-		ptr = malloc(sizeof(ptr) * 2);
+		ptr = malloc(nmemb * size);
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	if (ptr == NULL)
+	if (malloc == NULL)
 		return (NULL);
-	while (nmemb != 0)
+	_memset(arr, 0, nmemb * size)
+		return (NULL);
 	{
-		ptr[i] = one[i];
+	return (arr);
+}
+
+/**
+ * _memo - function fills memory with constant bytes.
+ * @a: memory size.
+ * @b: constant bytes.
+ * @c: size of bytes
+ * Return: char.
+ */
+
+void* _memset(char *a, char b, unsigned int c)
+{
+	unsigned int i;
+
+	i = 0;
+
+	while (i < c)
+	{
+		*(a + i) = b;
 		i++;
+		return (_memset);
 	}
-	while (size != 0)
-	{
-		ptr[j] = two[j];
-		j++;
-	}
-	return (ptr);
 }
