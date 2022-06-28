@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * string_nconcat - function
  * @s2: second str
