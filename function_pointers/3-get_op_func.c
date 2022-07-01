@@ -3,8 +3,8 @@
 #include "3-calc.h"
 
 /**
- * get_op_func -function that selects the correct function 
- * @s: operator 
+ * get_op_func -function that selects the correct function
+ * @s: operator
  * Return:pointer
  */
 
@@ -25,8 +25,8 @@ int (*get_op_func(char *s))(int, int)
 	{
 		if (*s == *(ops[i]).op)
 		{
-			return (*(ops[i].f);
-		} 
+			return (*(ops[i]).f);
+		}
 		i++;
 	}
 	return (NULL);
