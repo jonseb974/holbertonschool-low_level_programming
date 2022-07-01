@@ -39,6 +39,6 @@ int main(int argc, char *argv[])
 	}
 	sign = argv[2];
 	ptr = get_op_func(sign);
-	resultat = (*ptr) (a, b);
+	result = (*ptr) (a, b);
 	return (0);
 }
