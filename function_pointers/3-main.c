@@ -40,5 +40,6 @@ int main(int argc, char *argv[])
 	sign = argv[2];
 	ptr = get_op_func(sign);
 	result = (*ptr) (a, b);
+	printf("%d\n", result);
 	return (0);
 }
