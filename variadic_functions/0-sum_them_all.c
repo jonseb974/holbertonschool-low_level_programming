@@ -5,7 +5,6 @@
 /**
  * sum_them_all-a function that returns the sum of all its parameters.
  * @n: numbers of elements parameters
- * @numbers: int
  * Return: sum x + y
  */
 
