@@ -8,14 +8,16 @@ int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
-void print_char(va_list, char);
-void print_intg(va_list, intg);
-void print_str(va_args(args, char *));
-void print_flottant(va_args(flottant, float));
+void print_a_char(char *separator, va_list, args);
+void print_integer(char *separator, va_list, args);
+void print_char_ptr(char *separator, va_list, args);
+void print_float(char *separator, va_list, args);
 
 /**
  *struct format_types- structures formats
  * @identifier: conversion specifier
+ * @args: arguments parameters
+ * @separator: elements separator 
  * @f: pointer
  */
 

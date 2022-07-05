@@ -1,60 +1,59 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdarg.h>
 #include "variadic_functions.h"
 /**
- * print_int - print integer arguments list
- * @char: arguments
+ * print_a_char- print char list
+ * @args: arguments
  * @separator: parameters
  * Return: no return.
  */
 
-void print_c(va_list, char)
+void print_a_char(char *separator, va_list args)
 {
-	printf("%c", va_args(c, int));
+	printf("%s%c", separator, va_arg(args, int));
 }
 
 /**
- * print_c - print character
- * @args: arguments
- * @int: character 
+ * print_integer - print character
+ * @separator: separator of arguments
+ * @args: parameter arguments
  * Return: no return.
  */
 
-void print_int(va_list, int)
+void print_integer(char *separator, va_list args)
 {
-	printf("%c", va_args(int, int));
+	printf("%s%d", separator, va_arg(args, int));
 }
 
 /**
- * print_char - print string
- * @str: character 
+ * print_char_ptr - print string
+ * @separator: character
  * @args: parametors arguments.
  * Return: no return.
  */
 
-void print_str(va_args(args, char *))
+void print_char_ptr(char *separator, va_list args)
 {
-	char *arg = va_args(args, char *);
+	char *arg = va_arg(args, char *);
 
 	if (arg == NULL)
 	{
-		printf("%s", separator, "(nil)");
+		printf("%s%s", separator, "(nil)");
 		return;
 	}
-	printf("%s", separator, args);
+	printf("%s%s", separator, arg);
 }
 
 /**
- * print_float - print floats
- * @flottant: float
+ * print_a_float - print floats
+ * @separator: separator of arguments
  * @args: arguments
  * Return: no return
  */
 
-void print_flottant(va_args(flottant, float))
+void print_a_float(char *separator, va_list args)
 {
-	printf("%f", va_args(args, double));
+	printf("%s%f", separator, va_arg(args, double));
 }
 
 /**
@@ -68,18 +67,17 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 	ptr_all form_types[] = {
-		{"c", print_c},
-		{"i", print_int},
-		{"f", print_flottant},
-		{"s", print_str},
+		{"c", print_a_char},
+		{"i", print_integer},
+		{"f", print_a_float},
+		{"s", print_char_ptr},
 		{NULL, NULL},
 	};
 	unsigned int i = 0;
-        unsigned int j = 0;
-        char *separator = "";
+	unsigned int j = 0;
+	char *separator = "";
 
-        va_start(args, format);
-
+	va_start(args, format);
 	while (format != NULL && format[i])
 	{
 		j = 0;
