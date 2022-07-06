@@ -1,0 +1,4 @@
+all:
+	gcc main.c m.h school.c -o school
+CC = gcc
+	SRC = school.c main.c
