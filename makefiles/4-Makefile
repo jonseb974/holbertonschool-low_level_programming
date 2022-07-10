@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-Wall
+CFLAGS=-Wall -Werror -Wextra -pedantic
 SRC=main.c school.c
 OBJ= $(SRC:%.c = %.o)
 NAME=school
