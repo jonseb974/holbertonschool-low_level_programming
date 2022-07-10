@@ -1,6 +1,6 @@
 CC=gcc
 CFLAGS= -Wall -Werror -Wextra -pedantic
-SRC=main.c school.c
+SRC=main.c main.h school.c
 OBJ= $(SRC:%.c = %.o)
 NAME=school
 RM=rm -f
