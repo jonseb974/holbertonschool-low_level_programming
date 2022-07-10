@@ -1,5 +1,5 @@
 CC=gcc
-SRC=main.c main.h school.c
+SRC=main.c school.c
 CFLAGS=-Wall -Werror -Wextra -pedantic
 OBJ=$(SRC:%.c=%.o)
 NAME=school
@@ -7,7 +7,7 @@ NAME=school
 
 all: $(NAME)
 
-$(NAME):m.h $(OBJ)
+$(NAME): m.h $(OBJ)
 	$(CC) $(OBJ) -o $@
 clean:
 	$(RM) -f *~ $(NAME)
