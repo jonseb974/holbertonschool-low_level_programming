@@ -1,5 +1,5 @@
 CC=gcc
-SRC=main.c main.h school.c school
+SRC=main.c school.c school
 OBJ=$(SRC:%.c=%.o)
 NAME= school
 
