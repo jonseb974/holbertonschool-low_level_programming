@@ -3,7 +3,6 @@ SRC=main.c main.h school.c
 CFLAGS:-Wall -Werror -Wextra -pedantic
 OBJ=$(SRC:%.c=%.o)
 NAME=school
-RM=rm
 
 all: $(NAME)
 
