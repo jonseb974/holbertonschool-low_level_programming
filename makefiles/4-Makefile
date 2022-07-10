@@ -8,7 +8,7 @@ RM=rm
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $@ -c $<
+	$(CC) $(CFLAGS) $(OBJ) -o $@
 clean:
 	$(RM) -f *~$(NAME)
 oclean:
