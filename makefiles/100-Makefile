@@ -1,8 +1,9 @@
 CC=gcc
 SRC=main.c main.h school.c
-CFLAGS:-Wall -Werror -Wextra -pedantic
+CFLAGS=-Wall -Werror -Wextra -pedantic
 OBJ=$(SRC:%.c=%.o)
 NAME=school
+
 
 all: $(NAME)
 
