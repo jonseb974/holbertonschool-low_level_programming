@@ -5,7 +5,7 @@ OBJ=$(SRC:%.o=%.c)
 NAME=school
 RM=rm -f
 
-all: $(OBJ)
+all: $(NAME)
 
 $(NAME): $(NAME)
 	$(CC) $(OBJ) -o $@
