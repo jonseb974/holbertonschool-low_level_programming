@@ -8,7 +8,7 @@ RM=rm -f
 all: $(OBJ)
 
 $(NAME): $(NAME)
-	$(CC) $(CFLAGS) $(OBJ) -o $@
+	$(CC) $(OBJ) -o $@
 
 .PHONY: clean oclean fclean re
 
