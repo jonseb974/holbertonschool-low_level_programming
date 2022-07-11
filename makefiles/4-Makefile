@@ -7,10 +7,11 @@ RM=rm
 
 all: $(NAME)
 
+.PHONY: clean oclean fclean
+
 $(NAME): m.h $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $@
 
-.PHONY: all clean oclean fclean re
 clean:
 	$(RM) -f *~$(NAME)
 oclean:
