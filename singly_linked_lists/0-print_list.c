@@ -4,23 +4,26 @@
 #include "lists.h"
 
 /*
- *print_list-function that prints all the elements
+ *print_list - function that prints all the elements
  *of a list_t list.
- *@str: string input
+ *@str: string.
+ *@h: pointer of the next node.
  */
 
-size_t print_list(const list_t *h) /*pointer of next node*/
+size_t print_list(const list_t *h) /*h == pointer of next node*/
 {
-	size_t counter = 0;
+	size_t counter = 0; /*count store numbers of integers*/
 
 	while (h != NULL)
 	{
 		if (str == NULL)
-			printf("[0] (nil)\n");
+			printf("[0] (nil)\n");/* error meaage if NULL */
 
-		else("[%d] %s\n", h->len, h->str);
-		h = h->next;
-		counter++;
+		else
+		h = h->len;
+	        h = h->str;
+		h = h->next; /* next node became new h*/
+		counter++; /*The counter is incremented */
 	}
-	return (counter);
+	return (counter);/*Return data in the counter at the end of the program*/
 }
