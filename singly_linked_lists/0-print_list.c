@@ -2,28 +2,31 @@
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
-
-/*
- *print_list - function that prints all the elements
- *of a list_t list.
- *@str: string.
- *@h: pointer of the next node.
+/**
+ * print_list - a function that prints all the elements of a list
+ * @h: a pointer to the head node.
+ * Return: count number of nodes.
  */
 
-size_t print_list(const list_t *h) /*h == pointer of next node*/
+
+size_t print_list(const list_t *h)
 {
-	size_t counter = 0; /*count store numbers of integers*/
+	size_t count = 0;/* initilalisation d'un compteur */
 
 	while (h != NULL)
 	{
-		if (str == NULL)
-			printf("[0] (nil)\n");/* error meaage if NULL */
-
+		if (h->str == NULL)
+		{
+			printf("[0] (nil)\n");
+			h = h->next; /* prend la valeur du noeud suivant */
+			count++; /* increcrementation du compteur */
+		}
 		else
-		h = h->len;
-	        h = h->str;
-		h = h->next; /* next node became new h*/
-		counter++; /*The counter is incremented */
+		{
+			printf("[%u] %s\n", h->len, h->str);
+			h = h->next; /* Prend la valeur du noeud suivant */
+			count++; /* incrementation compteur */
+		}
 	}
-	return (counter);/*Return data in the counter at the end of the program*/
+	return (count);/* retourne, compteur total de noeuds */
 }
