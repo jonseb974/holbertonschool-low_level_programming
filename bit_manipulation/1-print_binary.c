@@ -3,20 +3,18 @@
 #include <string.h>
 #include "main.h"
 /**
- * _pow - calulation of power
- * @base: exponent
- * @power: power
+ * _pow_recursion - calulation of power
+ * @x: number
+ * @y: number
  * Return: output value.
  */
-unsigned long int _pow(unsigned int base, unsigned int power)
+int _pow_recursion(int x, int y)
 {
-	unsigned long int number;
-	unsigned int i;
-
-	number = 1;
-	for (i = 1; i <= power; i++)
-		number *= base;
-	return (number);
+	if (y < 0)
+		return (-1);
+	if (y == 0)
+		return (1);
+	return (x * _pow_recursion(x, y - 1));
 }
 
 /**
@@ -26,23 +24,25 @@ unsigned long int _pow(unsigned int base, unsigned int power)
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int divisor, check;
-	char flag;
+	unsigned int power = 0;
+	int expo = 10;
+	int flag = 0;
 
-	flag = 0;
-	divisor = +pow(2, sizeof(unsigned long int) * 8 - 1);
-	while (divisor != 0)
+	if (n == 0)
+	_putchar(0);
+	while (expo >= 0)
 	{
-		check = n & divisor;
-		if (check == divisor)
+		power = _pow_recursion(2, expo);
+		if (n >= power)
 		{
-			flag = 1;
 			_putchar('1');
+			n -= power;
+			flag = 1;
 		}
-		else if (flag == 1 || divisor == 1)
+		else if (n < power && flag == 1)
 		{
 			_putchar('0');
 		}
-		divisor >> 1;
+		expo--;
 	}
 }
