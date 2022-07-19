@@ -31,3 +31,37 @@ unsigned int binary_to_uint(const char *b)
 	}
 	return (i);
 }
+
+/**
+ * _pow_recursion - function that returns, value
+ * of x raised to the power of y.
+ * @x: number
+ * @y: number pow
+ * Return: int
+ */
+
+int _pow_recursion(int x, int y)
+{
+	if (y < 0)
+		return (-1);
+	if (y == 0)
+		return (1);
+	return (x * _pow_recursion(x, y - 1));
+}
+
+/**
+ * _sterlen -function that returns, length of a string
+ * @s: pointer.
+ * Return: int.
+ */
+
+int _sterlen(const char *s)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		i += 1;
+	}
+	return (i);
+}
