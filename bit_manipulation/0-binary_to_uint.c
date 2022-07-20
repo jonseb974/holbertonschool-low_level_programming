@@ -11,57 +11,18 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int conv = 1; /*conversion*/
-	unsigned int i = 0;
-	unsigned int len; /*length of the number*/
-	int j;
+	unsigned int i;/*length of the number*/
 
-	len = strlen(b); /*define length*/
-
-	if (b == NULL)
+	if (!b)
 		return (0);
-	for (j = len - 1; j >= 0; j--)
+	for (i = 0; *b; b++)
 	{
-		if (b[len] != '0' && b[len] != 1)
+		if (*b == '1')
+			i = (i << 1) | 1;
+		else if (*b == '0')
+			i = i << 1;
+		else
 			return (0);
-		if (b[len] == '1')
-		{
-			i += conv;
-		}
-		conv *= 2;
-	}
-	return (i);
-}
-
-/**
- * _pow_recursion - function that returns, value
- * of x raised to the power of y.
- * @x: number
- * @y: number pow
- * Return: int
- */
-
-int _pow_recursion(int x, int y)
-{
-	if (y < 0)
-		return (-1);
-	if (y == 0)
-		return (1);
-	return (x * _pow_recursion(x, y - 1));
-}
-
-/**
- * _sterlen -function that returns, length of a string
- * @s: pointer.
- * Return: int.
- */
-
-int _sterlen(const char *s)
-{
-	int i = 0;
-
-	while (s[i] != '\0')
-	{
-		i += 1;
 	}
 	return (i);
 }
