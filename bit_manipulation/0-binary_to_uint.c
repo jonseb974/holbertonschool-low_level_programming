@@ -10,7 +10,6 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int conv = 1; /*conversion*/
 	unsigned int i;/*length of the number*/
 
 	if (!b)
