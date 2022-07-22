@@ -16,21 +16,20 @@
 
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int f1, f2;
+	int f1, f2; /* variables */
 
-	if (filename == NULL)
+	if (filename == NULL) /*error condition*/
 		return (-1);
-	if (text_content == NULL)
-		return (1);
+	if (text_content == NULL) /*NULL condition*/
+		return (1); 
 
-	f1 = open(filename, O_RDWR | O_APPEND);
-	if (f1 == -1)
-		return (-1);
+	f1 = open(filename, O_RDWR | O_APPEND); /*read, write, append to the file*/
+	if (f1 == -1) /*if no file */
+		return (-1); /* error condition */
 	f2 = write(f1, text_content, strlen(text_content));
-	close(f1);
+	close(f1); /* */
 	if (f2 == -1)
 		return (-1);
-
 
 	return (1);
 }
@@ -43,11 +42,11 @@ int append_text_to_file(const char *filename, char *text_content)
 
 int _strlen(char *s)
 {
-	int i = 0;
+	int i = 0; /* initialisation of i */
 
-	while (s[i] != '\0')
+	while (s[i] != '\0') /* if not end of string */
 	{
-		i++;
+		i++; /* incrementation */
 	}
-	return (i);
+	return (i); /* return length */
 }
