@@ -12,14 +12,14 @@
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *tmp; /* temporary variable */
+	dlistint_t *tmp = 0; /* temporary variable */
 	unsigned int count = 0;/* counter for data storage */
 
 	if (*head == NULL) /* error condition */
 		return (-1);
 	tmp = *head; /* temporary variable become the head */
 
-	while (count = 0 && tmp != NULL && count < index)
+	while (tmp != NULL && count < index)
 	{
 		tmp = tmp->next;
 		count++;
