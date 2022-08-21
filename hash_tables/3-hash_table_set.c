@@ -19,10 +19,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	if (ht && key && *key)
 	{
-		unsigned long int index = 0;/*initialisation:index,positive*/
+		unsigned long int index = 0;
 
 		index = key_index((const unsigned char *)key, (unsigned long int)ht->size);
-		return (Inst(hash_node_t **array_ptr, char *value, char *key));
+		return (Inst(&ht->array[index], (char *)value, (char *)key));
 	}
 	return (0);
 }
