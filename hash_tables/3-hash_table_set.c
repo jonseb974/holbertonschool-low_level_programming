@@ -45,8 +45,7 @@ int update(hash_node_t *ptr, char *value, char *key)
 			return (1);
 		}
 		ptr = ptr->next;
-		return (0);
-	}
+	} return (0);
 }
 
 /**
