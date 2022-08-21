@@ -68,7 +68,7 @@ int Inst(hash_node_t **array_ptr, char *value, char *key)
 	if (!(*array_ptr))
 	{
 		*array_ptr = new;
-		new->nwxt = NULL;
+		new->next = NULL;
 	}
 	else
 	{
@@ -77,10 +77,10 @@ int Inst(hash_node_t **array_ptr, char *value, char *key)
 			free(new);
 			return (1);
 		}
-		mew->next = *array_ptr;
+		new->next = *array_ptr;
 		*array_ptr = new;
 	}
-	new->key = strcdup(key);
+	new->key = strdup(key);
 	new->value = strdup(value);
 	return (1);
 }
