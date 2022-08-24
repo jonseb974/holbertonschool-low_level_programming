@@ -20,7 +20,8 @@ int binary_search(int *array, size_t size, int value)
 		if (array[mid] == value)
 			return (mid);
 		if (array[mid] > value)
-			return (binary_search(array, i, mid - 1, value));
-		return (binary_search(array, mid + 1, size, value));
+			return binary_search(array, mid - 1, value);
+		return binary_search(array, mid + 1, value);
 	}
+	return (value);
 }
